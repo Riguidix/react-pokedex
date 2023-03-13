@@ -1,11 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
 
-// import SearchPage from './pages/Search';
+import LoadingPage from './pages/Loading';
+import SearchPage from './pages/Search';
 
 function AppRouter() {
     return (
         <Routes>
-            <Route path="/" element={ <h1>search</h1> } />
+            <Route path="/" element={ <SearchPage /> } />
         </Routes>
     );
 }
