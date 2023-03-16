@@ -15,7 +15,7 @@ function SearchBar() {
     const dispatch = useDispatch();
 
     const handleSearchValue = (event) => {
-        setSearchValue(event.target.value);
+        setSearchValue(event.target.value.toLowerCase());
     }
 
     const handleEnter = async (event) => {
