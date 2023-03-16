@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 
-import LoadingPage from './pages/Loading';
 import SearchPage from './pages/Search';
 import MainPage from './pages/Main';
 
