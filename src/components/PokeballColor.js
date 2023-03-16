@@ -9,7 +9,7 @@ function PokeballColor(props) {
         <div className={ containerStyle + ' ' + props.layout}>
             <img
                 alt="Pokeball Colored Vector"
-                className="w-3/4 md:w-2/4 lg:w-2/5 z-0"
+                className="h-full w-full z-0"
                 src={ PokeballImage }
                 style={ { filter: style } }
             />

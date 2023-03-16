@@ -1,14 +1,22 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { resetState } from "../features/pokemon/pokemonSlice";
+
 import Pokeball from "../components/Pokeball";
-import PokeballColor from "../components/PokeballColor";
+import Title from "../components/Title";
 import SearchBar from "../components/SearchBar";
 
 function Search() {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(resetState());
+    }, []);
+
     return (
         <div className="flex flex-col items-center justify-around h-screen w-screen">
-            <div className="flex items-center h-10 py-7 text-white w-full">
-                <PokeballColor type='white' layout="relative h-14 w-14" />
-                <h1>Pokedex</h1>
-            </div>
+            <Title label="Pokedex" />
+            
             <div className="Search relative flex flex-col items-center h-full justify-center w-screen" >
                 <Pokeball />
 

@@ -1,4 +1,4 @@
-const colours = {
+const colors = {
 	normal: '#A8A77A',
 	fire: '#EE8130',
 	water: '#6390F0',
@@ -19,4 +19,4 @@ const colours = {
 	fairy: '#D685AD',
 };
 
-module.exports.colors = colours;
+module.exports.colors = colors;

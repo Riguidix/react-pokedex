@@ -12,7 +12,7 @@ function BackBtn() {
     return (
         <div 
             onClick={ handleGoTo }
-            className="cursor-wait
+            className="
                 flex items-center justify-center h-10 py-7 text-white w-1/4
                 md:w-1/5
                 md:text-black

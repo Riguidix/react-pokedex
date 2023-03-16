@@ -18,7 +18,7 @@ function Title(props) {
         <div className="flex items-center h-10 py-7 text-white w-full">
             <PokeballColor type="white" layout="relative h-14 w-14" />
 
-            <h1>
+            <h1 className="ml-2">
                 { props.label } { handleNumber(props.number) }
             </h1>
         </div>
