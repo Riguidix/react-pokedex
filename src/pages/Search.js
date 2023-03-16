@@ -10,8 +10,9 @@ function Search() {
     const dispatch = useDispatch();
 
     useEffect(() => {
+        // eslint-disable-next-line
         dispatch(resetState());
-    }, []);
+    }, [dispatch]);
 
     return (
         <div className="flex flex-col items-center justify-around h-screen w-screen">
